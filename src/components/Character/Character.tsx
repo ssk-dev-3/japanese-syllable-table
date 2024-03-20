@@ -6,9 +6,8 @@ type Props = {
 };
 
 export const Character: React.FC<Props> = ({char, audioSource}) => {
-  const audio = new Audio(audioSource);
-
   const handleClickButton = () => {
+    const audio = new Audio(audioSource);
     audio.play();
   };
 
