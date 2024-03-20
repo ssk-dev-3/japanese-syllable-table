@@ -1,14 +1,15 @@
 .charWrapper {
   display: grid;
   place-items: center;
-  width: 100px;
-  height: 100px;
+  width: 96px;
+  height: 96px;
   background-color: white;
-  border: 16px groove lightgrey;
+  border: 8px groove lightgrey;
   border-radius: 0.5rem;
 }
 
 .char {
+  color: #333333;
   font-size: 2rem;
   font-weight: bold;
 }
