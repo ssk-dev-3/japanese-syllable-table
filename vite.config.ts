@@ -14,10 +14,10 @@ export default defineConfig({
       includeAssets: ['favicon.ico', 'apple-touch-icon.png'],
       injectRegister: 'auto',
       manifest: {
-        name: 'Japanese Syllable Table',
-        short_name: 'Japanese Syllable Table',
-        description: 'あいうえお表',
-        theme_color: '#ff7d88',
+        name: 'あいうえお表',
+        short_name: 'あいうえお表',
+        description: '',
+        theme_color: '#333333',
         icons: [
           {
             src: 'icon-192x192.png',
