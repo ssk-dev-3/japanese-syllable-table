@@ -13,7 +13,7 @@ function App() {
   return (
     <div className={styles.appWrapper}>
       <SyllableTable isHiragana={isHiragana} />
-      <KanaTypeSwitch isHiragana={isHiragana} onClickRadio={handleClickRadio} />
+      <KanaTypeSwitch isHiragana={isHiragana} onChangeRadio={handleClickRadio} />
     </div>
   );
 }
