@@ -1,0 +1,35 @@
+.radioWrapper {
+  display: flex;
+  column-gap: 2rem;
+}
+
+.radio {
+  position: relative;
+  display: grid;
+  height: 64px;
+  width: 64px;
+  place-items: center;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: #333;
+  border: 16px outset #333;
+
+  &:has(input[type="radio"]:checked) {
+    border: 16px inset #333;
+  }
+
+  input[type="radio"] {
+    display: none;
+
+      &+ .type {
+        color: #f7f7f7;
+      }
+  }
+
+  .type {
+   font-size: 4rem;
+   font-weight: bold;
+   line-height: 1;
+   color: #f7f7f7;
+  }
+}

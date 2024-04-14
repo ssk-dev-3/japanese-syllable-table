@@ -6,6 +6,10 @@
   background-color: white;
   border: 8px groove lightgrey;
   border-radius: 0.5rem;
+
+  &:disabled {
+    background-color: #cccccc;
+  }
 }
 
 .char {
@@ -13,3 +17,5 @@
   font-size: 2rem;
   font-weight: bold;
 }
+
+

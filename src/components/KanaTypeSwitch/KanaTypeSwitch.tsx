@@ -4,18 +4,18 @@ export type KanaType = "Hiragana" | "Katakana";
 
 type Props = {
   isHiragana: boolean;
-  onChangeRadio: (isHiragana: boolean) => void;
+  onChange: (isHiragana: boolean) => void;
 };
 
-export const KanaTypeSwitch: React.FC<Props> = ({isHiragana, onChangeRadio}) => {
+export const KanaTypeSwitch: React.FC<Props> = ({isHiragana, onChange}) => {
   return (
     <div className={styles.radioWrapper}>
       <label className={styles.radio}>
-        <input type="radio" name="kanaType" id="hiragana" checked={isHiragana} onChange={() => onChangeRadio(true)} />
+        <input type="radio" name="kanaType" id="hiragana" checked={isHiragana} onChange={() => onChange(true)} />
         <span className={styles.kanaType}>あ</span>
       </label>
       <label className={styles.radio}>
-        <input type="radio" name="kanaType" id="katakana" checked={!isHiragana} onChange={() => onChangeRadio(false)} />
+        <input type="radio" name="kanaType" id="katakana" checked={!isHiragana} onChange={() => onChange(false)} />
         <span className={styles.kanaType}>ア</span>
       </label>
     </div>
